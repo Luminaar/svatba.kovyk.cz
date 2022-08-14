@@ -3,18 +3,18 @@
 
 <head>
     <title>Svatba | Káťa & Max</title>
-    <link href="./AmaticSC-Regular.ttf" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./smrcky.svg">
+    <link href="/AmaticSC-Regular.ttf" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/smrcky.svg">
     <meta charset="utf-8" />
     <style>
         @font-face {
             font-family: 'AmaticSC';
-            src: url('./AmaticSC-Regular.ttf');
+            src: url('/AmaticSC-Regular.ttf');
         }
 
         @font-face {
             font-family: 'AmaticSC Bold';
-            src: url('./AmaticSC-Bold.ttf');
+            src: url('/AmaticSC-Bold.ttf');
         }
 
         #names {
@@ -49,17 +49,6 @@
             text-align: center;
         }
 
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        .flex-container>div {
-            flex-grow: 1;
-            margin: auto;
-
-        }
 
         .person {
             text-align: center;
@@ -69,18 +58,38 @@
             list-style-type: none;
         }
 
-        .face {
-            width: 250px;
-        }
 
         @media only screen and (max-width: 600px) {
             .flex-container {
                 flex-direction: column;
+                flex-direction: row;
+                justify-content: center;
             }
 
             .face {
                 width: 300px;
             }
+        }
+
+        @media only screen and (min-width: 601px) {
+
+            .flex-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .flex-container>div {
+                flex-grow: 1;
+                margin: auto;
+
+            }
+
+            .face {
+                width: 250px;
+            }
+
+
         }
     </style>
 </head>
