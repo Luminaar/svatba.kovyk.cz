@@ -18,6 +18,43 @@
             src: url('/AmaticSC-Bold.ttf');
         }
 
+        .laurel {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-family: 'AmaticSC Bold', cursive;
+        }
+
+        .laurel>img {
+            height: 25vh;
+        }
+
+        .laurel>p {
+            font-size: 6vh;
+            text-align: center;
+            height: 25vh;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        #laurel-right {
+            -moz-transform: scale(-1, 11);
+            -o-transform: scale(-1, 11);
+            -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+        }
+
+        @media only screen and (max-width: 900px) {
+            #laurel {
+                display: none;
+            }
+
+            #laurel-right {
+                display: none;
+            }
+        }
+
         nav {
             text-transform: uppercase;
             font-size: 2.0em;
@@ -31,7 +68,7 @@
         }
 
         .header>p {
-            font-size: 2.5em;
+            font-size: 5vh;
             font-family: 'AmaticSC', cursive;
         }
 
@@ -44,6 +81,7 @@
         .header {
             margin: 0;
             position: absolute;
+            width: 100%;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -155,7 +193,16 @@
 
     <div class="header-container">
         <div class="header">
-            <img src="/laurel.svg" style="font-size: 2em; max-width: 25em;">
+            <div class="laurel">
+                <img src="/laurel-left.svg" id="laurel">
+                <p>
+                    Kateřina Matoušková<br>
+                    &<br>
+                    Max Kovykov
+                </p>
+                <img src="/laurel-left.svg" id="laurel-right">
+            </div>
+
 
             <p>
                 Srdečně Vás zveme na obřad a svatební hostinu
