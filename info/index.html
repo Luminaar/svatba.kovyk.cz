@@ -45,21 +45,55 @@
             transform: scale(-1, 1);
         }
 
+        .header>p {
+            font-size: 5vh;
+            font-family: 'AmaticSC', cursive;
+        }
+
+        #names-long {
+            display: block;
+        }
+
+        #names-short {
+            display: none;
+        }
+
+
         @media only screen and (max-width: 900px) {
             #laurel {
-                display: none;
+                /* display: none; */
             }
 
             #laurel-right {
+                /* display: none; */
+            }
+
+            .laurel>p {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+
+            .header>p {
+                font-size: 4vh;
+            }
+
+            #names-long {
                 display: none;
+            }
+
+            #names-short {
+                display: block;
             }
         }
 
         nav {
             text-transform: uppercase;
-            font-size: 2.0em;
+            font-size: 2em;
             font-family: 'AmaticSC Bold', cursive;
-
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding-top: 10px;
         }
 
         nav>a {
@@ -67,10 +101,7 @@
             color: #332b12;
         }
 
-        .header>p {
-            font-size: 5vh;
-            font-family: 'AmaticSC', cursive;
-        }
+
 
         .header-container {
             text-align: center;
@@ -195,10 +226,15 @@
         <div class="header">
             <div class="laurel">
                 <img src="/laurel-left.svg" id="laurel">
-                <p>
+                <p id="names-long">
                     Kateřina Matoušková<br>
                     &<br>
                     Max Kovykov
+                </p>
+                <p id="names-short">
+                    Káťa<br>
+                    &<br>
+                    Max
                 </p>
                 <img src="/laurel-left.svg" id="laurel-right">
             </div>
