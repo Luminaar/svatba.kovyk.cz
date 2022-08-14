@@ -30,6 +30,11 @@
         body {
             color: #332b12;
             background-color: #fbf9f3;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 5%;
+            padding-right: 5%;
         }
 
         .divider {
@@ -40,25 +45,42 @@
             width: 7em;
         }
 
-        p {
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-
-        li {
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-
         nav {
             text-align: center;
         }
 
-        h1,
-        h2,
-        h3,
-        h4 {
-            margin-left: 5%;
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .flex-container>div {
+            flex-grow: 1;
+            margin: auto;
+
+        }
+
+        .person {
+            text-align: center;
+        }
+
+        .person>ul {
+            list-style-type: none;
+        }
+
+        .face {
+            width: 250px;
+        }
+
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .face {
+                width: 250px;
+            }
         }
     </style>
 </head>
@@ -84,15 +106,55 @@
     <h2 id="kontakty">Kontakty</h2>
     <p>
         Pokud na nás máte jakýkoliv dotaz před svatbou, neváhejte se na nás obrátit:
-
-        Max Kovykov 770 189 638
-        Kačka Matoušková
-
-        V den obřadu prosíme kontaktujte hlavně svědky:
-
-        Jana Matoušková
-        Josef Boubín
     </p>
+
+    <div class="flex-container">
+        <div class="person">
+            <img src="max.jpg" class="face">
+            <ul>
+                <li>Ženich</li>
+                <li>Max Kovykov</li>
+                <li>770 189 638</li>
+                <li>kovykmax@gmail.com</li>
+            </ul>
+        </div>
+
+
+        <div class="person">
+            <img src="kacka.jpg" class="face">
+            <ul>
+                <li>Nevěsta</li>
+                <li>Kateřina Matoušková</li>
+                <li>736 167 653</li>
+                <li>katka.mat@volny.cz</li>
+            </ul>
+        </div>
+    </div>
+
+    <p>
+        V den obřadu prosíme kontaktujte hlavně svědky:
+    </p>
+
+    <div class="flex-container">
+        <div class="person">
+            <img src="max.jpg" class="face">
+            <ul>
+                <li>Svědkyně nevěsty</li>
+                <li>Jana Matoušková</li>
+                <li>775 152 052</li>
+            </ul>
+        </div>
+
+        <div class="person">
+            <img src=" kacka.jpg" class="face">
+            <ul>
+                <li>Svědek ženicha</li>
+                <li>Josef Boubín</li>
+                <li>739 624 731</li>
+            </ul>
+        </div>
+    </div>
+
 
     <div class="divider">
         <img src="./divider.svg">
