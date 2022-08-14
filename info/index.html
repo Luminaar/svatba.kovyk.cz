@@ -18,10 +18,49 @@
             src: url('/AmaticSC-Bold.ttf');
         }
 
-        #names {
-            font-family: 'AmaticSC Bold';
-            font-size: 4em;
+        nav {
+            text-transform: uppercase;
+            font-size: 2.0em;
+            font-family: 'AmaticSC Bold', cursive;
+
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: #332b12;
+        }
+
+        .header>p {
+            font-size: 2.5em;
+            font-family: 'AmaticSC', cursive;
+        }
+
+        .header-container {
             text-align: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .header {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .header>a {
+            color: #332b12;
+            text-decoration: none;
+            text-decoration-color: #332b1231;
+        }
+
+        .header>a:hover {
+            font-family: 'AmaticSC Bold', cursive;
+        }
+
+        .divider {
+            width: 3em;
         }
 
         #names img {
@@ -40,6 +79,7 @@
 
         .divider {
             text-align: center;
+            margin: auto;
         }
 
         .divider img {
@@ -97,21 +137,56 @@
 
 <body>
 
-    <div id="names">
+    <nav>
+        <a href="#kontakty">Kontakty</a>
+        <span class="nav-sep">-</span>
+        <a href="#misto">Místo</a>
+        <span class="nav-sep">-</span>
+        <a href="#doprava">Doprava</a>
+        <span class="nav-sep">-</span>
+        <a href="#ubytovani">Ubytování</a>
+        <span class="nav-sep">-</span>
+        <a href="#dress-code">Dress-code</a>
+        <span class="nav-sep">-</span>
+        <a href="#program">Program</a>
+        <span class="nav-sep">-</span>
+        <a href="#rodice-s-detmi">Rodiče s dětmi</a>
+    </nav>
+
+    <div class="header-container">
+        <div class="header">
+            <img src="/laurel.svg" style="font-size: 2em; max-width: 25em;">
+
+            <p>
+                Srdečně Vás zveme na obřad a svatební hostinu
+            </p>
+
+            <p>
+                <img src="/divider.svg" class="divider">
+            </p>
+
+            <p>
+                8.10.2022
+            </p>
+
+            <p>
+                Statek Smrčiny, Želiv 91
+            </p>
+
+            <p>
+                <img src="/divider.svg" class="divider">
+            </p>
+
+        </div>
+    </div>
+
+    <!-- <div id="names">
         <img src="/divider-left.svg">
         Káťa & Max
         <img src="/divider-right.svg">
-    </div>
+    </div> -->
 
-    <nav>
-        <a href="#kontakty">Kontakty</a>
-        <a href="#misto">Místo</a>
-        <a href="#doprava">Doprava</a>
-        <a href="#ubytovani">Ubytování</a>
-        <a href="#dress-code">Dress-code</a>
-        <a href="#program">Program</a>
-        <a href="#rodice-s-detmi">Rodiče s dětmi</a>
-    </nav>
+
 
     <h2 id="kontakty">Kontakty</h2>
     <p>
