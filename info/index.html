@@ -5,225 +5,13 @@
     <title>Svatba | Káťa & Max</title>
     <link href="/AmaticSC-Regular.ttf" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/smrcky.svg">
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        @font-face {
-            font-family: 'AmaticSC';
-            src: url('/AmaticSC-Regular.ttf');
-        }
-
-        @font-face {
-            font-family: 'AmaticSC Bold';
-            src: url('/AmaticSC-Bold.ttf');
-        }
-
-        .laurel {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            font-family: 'AmaticSC Bold', cursive;
-        }
-
-        .laurel>img {
-            height: 25vh;
-        }
-
-        .laurel>p {
-            font-size: 6vh;
-            text-align: center;
-            height: 25vh;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-
-        #laurel-right {
-            -moz-transform: scale(-1, 11);
-            -o-transform: scale(-1, 11);
-            -webkit-transform: scale(-1, 1);
-            transform: scale(-1, 1);
-        }
-
-        .header>p {
-            font-size: 5vh;
-            font-family: 'AmaticSC', cursive;
-        }
-
-        #names-long {
-            display: block;
-        }
-
-        #names-short {
-            display: none;
-        }
-
-
-        @media only screen and (max-width: 900px) {
-            #laurel {
-                /* display: none; */
-            }
-
-            #laurel-right {
-                /* display: none; */
-            }
-
-            .laurel>p {
-                margin-left: 40px;
-                margin-right: 40px;
-            }
-
-            .header>p {
-                font-size: 4vh;
-            }
-
-            #names-long {
-                display: none;
-            }
-
-            #names-short {
-                display: block;
-            }
-        }
-
-        nav {
-            display: none;
-            text-transform: uppercase;
-            font-size: 2em;
-            font-family: 'AmaticSC Bold', cursive;
-            position: fixed;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding-top: 10px;
-        }
-
-        nav>a {
-            text-decoration: none;
-            color: #332b12;
-        }
-
-
-
-        .header-container {
-            text-align: center;
-            height: 100vh;
-            position: relative;
-        }
-
-        .header {
-            margin: 0;
-            position: absolute;
-            width: 100%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .header>a {
-            color: #332b12;
-            text-decoration: none;
-            text-decoration-color: #332b1231;
-        }
-
-        .header>a:hover {
-            font-family: 'AmaticSC Bold', cursive;
-        }
-
-        .divider {
-            width: 3em;
-        }
-
-        #names img {
-            height: 0.8em;
-        }
-
-        body {
-            color: #332b12;
-            background-color: #fbf9f3;
-            max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-
-        .divider {
-            text-align: center;
-            margin: auto;
-        }
-
-        .divider img {
-            width: 7em;
-        }
-
-        nav {
-            text-align: center;
-        }
-
-
-        .person {
-            text-align: center;
-        }
-
-        .person>ul {
-            list-style-type: none;
-        }
-
-
-        @media only screen and (max-width: 600px) {
-            .flex-container {
-                flex-direction: column;
-                flex-direction: row;
-                justify-content: center;
-            }
-
-            .face {
-                width: 300px;
-            }
-        }
-
-        @media only screen and (min-width: 601px) {
-
-            .flex-container {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-            }
-
-            .flex-container>div {
-                flex-grow: 1;
-                margin: auto;
-
-            }
-
-            .face {
-                width: 250px;
-            }
-
-
-        }
-    </style>
 </head>
 
 <body>
-
-    <nav>
-        <a href="#kontakty">Kontakty</a>
-        <span class="nav-sep">-</span>
-        <a href="#misto">Místo</a>
-        <span class="nav-sep">-</span>
-        <a href="#doprava">Doprava</a>
-        <span class="nav-sep">-</span>
-        <a href="#ubytovani">Ubytování</a>
-        <span class="nav-sep">-</span>
-        <a href="#dress-code">Dress-code</a>
-        <span class="nav-sep">-</span>
-        <a href="#program">Program</a>
-        <span class="nav-sep">-</span>
-        <a href="#rodice-s-detmi">Rodiče s dětmi</a>
-    </nav>
-
-    <div class="header-container">
+    <!-- <div class="header-container" id="uvod">
         <div class="header">
             <div class="laurel">
                 <img src="/laurel-left.svg" id="laurel">
@@ -250,7 +38,7 @@
             </p>
 
             <p>
-                8.10.2022
+                8.10.2022, 11:00
             </p>
 
             <p>
@@ -262,51 +50,94 @@
             </p>
 
         </div>
-    </div>
-
-    <!-- <div id="names">
-        <img src="/divider-left.svg">
-        Káťa & Max
-        <img src="/divider-right.svg">
     </div> -->
 
+    <div class="header-container" id="pozdrav">
+        <div class="header">
+            <div style="text-align: center">
+                <img id="my" src="my.jpg">
+            </div>
+            <!-- <p>Těšíme se na Vás!</p> -->
 
+            <p>Káťa & Max & Róza</p>
+            <p>
+                Statek Smrčiny, Želiv 91
+            </p>
 
-    <h2 id="kontakty">Kontakty</h2>
-    <p>
-        Pokud na nás máte jakýkoliv dotaz před svatbou, neváhejte se na nás obrátit:
-    </p>
+            <p>
+                8.10.2022, 11:00
+            </p>
 
-    <div class="flex-container">
-        <div class="person">
-            <img src="max.jpg" class="face">
-            <ul>
-                <li>Ženich</li>
-                <li>Max Kovykov</li>
-                <li>770 189 638</li>
-                <li>kovykmax@gmail.com</li>
-            </ul>
-        </div>
+            <div class="divider">
+                <img src="/divider.svg">
+            </div>
 
-
-        <div class="person">
-            <img src="kacka.jpg" class="face">
-            <ul>
-                <li>Nevěsta</li>
-                <li>Kateřina Matoušková</li>
-                <li>736 167 653</li>
-                <li>katka.mat@volny.cz</li>
-            </ul>
         </div>
     </div>
 
+
+    <nav id="nav-narrow">
+        <a href="#kontakty">Kontakty</a>
+        <div class="nav-sep">
+            <img src="/smrcky.svg">
+        </div>
+        <a href="#misto">Místo</a>
+        <div class="nav-sep">
+            <img src="/smrcky.svg">
+        </div>
+        <a href="#program">Program</a>
+        <div class="nav-sep">
+            <img src="/smrcky.svg">
+        </div>
+        <a href="#obcerstveni">Občerstvení</a>
+        <br>
+        <a href="#ubytovani">Ubytování</a>
+        <div class="nav-sep">
+            <img src="/smrcky.svg">
+        </div>
+        <a href="#dress-code">Dress code</a>
+        <div class="nav-sep">
+            <img src="/smrcky.svg">
+        </div>
+        <a href="#dary">Dary</a>
+    </nav>
+
+    <nav id="nav-wide">
+        <a href="#kontakty">Kontakty</a>
+        <div class="nav-sep">
+            <img src="/smrcky.svg">
+        </div>
+        <a href="#misto">Místo</a>
+        <div class="nav-sep">
+            <img src="/smrcky.svg">
+        </div>
+        <a href="#program">Program</a>
+        <div class="nav-sep">
+            <img src="/smrcky.svg">
+        </div>
+        <a href="#obcerstveni">Občerstvení</a>
+        <div class="nav-sep">
+            <img src="/smrcky.svg">
+        </div>
+        <a href="#ubytovani">Ubytování</a>
+        <div class="nav-sep">
+            <img src="/smrcky.svg">
+        </div>
+        <a href="#dress-code">Dress code</a>
+        <div class="nav-sep">
+            <img src="/smrcky.svg">
+        </div>
+        <a href="#dary">Dary</a>
+    </nav>
+
+    <h2 id="kontakty">Kontakty</h2>
     <p>
         V den obřadu prosíme kontaktujte hlavně svědky:
     </p>
 
     <div class="flex-container">
         <div class="person">
-            <img src="max.jpg" class="face">
+            <img src="jana.jpg" class="face">
             <ul>
                 <li>Svědkyně nevěsty</li>
                 <li>Jana Matoušková</li>
@@ -315,7 +146,7 @@
         </div>
 
         <div class="person">
-            <img src=" kacka.jpg" class="face">
+            <img src="jana.jpg" class="face">
             <ul>
                 <li>Svědek ženicha</li>
                 <li>Josef Boubín</li>
@@ -323,7 +154,6 @@
             </ul>
         </div>
     </div>
-
 
     <div class="divider">
         <img src="/divider.svg">
@@ -344,11 +174,18 @@
 
     <h3>Autem</h3>
 
-    <p>
+    <!-- <p>
         Nejlepší způsob jak se na místo dopravit je autem. V okolí statku je dostatek místa na parkování pro všechny
         hosty. Pokud víte, že máte v autě místo a chcete ušetřit planetu, můžete využít <a href="TODO">svatebního
             car-sharingu</a>.
+    </p> -->
+
+    <p>
+        Na místo vedou dvě příjezdové cesty. Doporučujeme zvolit cestu vedoucí z obce Bolechov.
     </p>
+
+    <h4>Parkování</h4>
+    Parkovacích míst bude dost pro všechny přímo u statku a budou označena cedulemi.
 
     <h3>Hromadnou dopravou</h3>
 
@@ -392,7 +229,7 @@
         <img src="/divider.svg">
     </div>
 
-    <h2 id="rodice-s-detmi">Rodiče s dětmi</h2>
+    <h3 id="rodice-s-detmi">Rodiče s dětmi</h3>
 
     <p>
         Mezi účastníky svatby bude veliké množství rodičů s dětmi různých věkových kategorií (a my jsme jedni z nich).
