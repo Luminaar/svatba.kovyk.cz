@@ -114,7 +114,7 @@ nav>a {
 }
 
 
-@media only screen and (min-width: 1px) and (max-width: 900px) {
+@media only screen and (min-width: 1px) and (max-width: 600px) {
     h2 {
         font-size: 2.2em;
     }
@@ -148,16 +148,20 @@ nav>a {
     }
 
     #nav-wide {
+        display: block;
+    }
+
+    #nav-wide {
         display: none;
     }
 
     #nav-narrow {
-        display: block;
+        display: none;
     }
 
 }
 
-@media only screen and (min-width: 901px) and (max-width: 1279px) {
+@media only screen and (min-width: 601px) and (max-width: 1279px) {
     h2 {
         font-size: 3em;
     }
@@ -188,6 +192,10 @@ nav>a {
 
     #my {
         width: 40vh;
+    }
+
+    #nav-wide {
+        display: none;
     }
 
     #nav-wide {
@@ -230,6 +238,10 @@ nav>a {
 
     #my {
         width: 50vh;
+    }
+
+    #nav-wide {
+        display: none;
     }
 
     #nav-wide {
