@@ -147,7 +147,7 @@ nav>a {
         width: 30vh
     }
 
-    #nav-wide {
+    #nav-slim {
         display: block;
     }
 
@@ -194,7 +194,7 @@ nav>a {
         width: 40vh;
     }
 
-    #nav-wide {
+    #nav-slim {
         display: none;
     }
 
@@ -221,7 +221,7 @@ nav>a {
     }
 
     body {
-        max-width: 50vw;
+        max-width: 60vw;
     }
 
     .flex-container {
@@ -240,7 +240,7 @@ nav>a {
         width: 50vh;
     }
 
-    #nav-wide {
+    #nav-slim {
         display: none;
     }
 
