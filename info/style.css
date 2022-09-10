@@ -16,10 +16,14 @@ body {
     margin-right: auto;
     padding-left: 5%;
     padding-right: 5%;
+    font-family: Garamond, serif;
+    line-height: 1.6;
+    font-size: 18px;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'AmaticSC', cursive;
+    line-height: 1.2;
 }
 
 .header-container {
@@ -28,6 +32,7 @@ h1, h2, h3, h4, h5 {
     min-height: 100vh;
     position: relative;
     margin-bottom: 1vh;
+    line-height: initial;
 }
 
 .header {
@@ -63,6 +68,7 @@ h1, h2, h3, h4, h5 {
 .flex-container {
     display: flex;
     justify-content: center;
+    margin-top: 4em;
 }
 
 .flex-container>div {
@@ -73,6 +79,7 @@ h1, h2, h3, h4, h5 {
 
 .person {
     text-align: center;
+    line-height: 2;
 }
 
 .person>ul {
@@ -145,6 +152,10 @@ nav>a {
         width: 250px;
     }
 
+    #josef {
+        margin-top: 2em;
+    }
+
     #my {
         width: 30vh
     }
@@ -172,7 +183,7 @@ nav>a {
     }
 
     body {
-        max-width: 75vw;
+        max-width: 650px;
     }
 
     .flex-container {
@@ -214,7 +225,7 @@ nav>a {
     }
 
     body {
-        max-width: 60vw;
+        max-width: 650px;
     }
 
     .flex-container {
@@ -230,7 +241,7 @@ nav>a {
     }
 
     #my {
-        width: 50vh;
+        width: 40vh;
     }
 
     #nav-slim {
