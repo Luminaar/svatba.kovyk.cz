@@ -57,6 +57,7 @@ h1, h2, h3, h4, h5 {
 .divider {
     text-align: center;
     margin: auto;
+    margin-top: 2em;
 }
 
 .flex-container {
@@ -86,6 +87,7 @@ nav {
     clear: both;
     text-align: center;
     padding-bottom: 3vh;
+    padding-top: 3vh;
 }
 
 .nav-sep {
